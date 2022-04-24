@@ -1,0 +1,75 @@
+/*Syntax CSS
+Selector {	property: value; property:  value;}
+*/
+/* the asterisk symbol specifies the universal selector,
+we select all HTML elements */
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+
+h1, h3 {
+
+	font-family: "Montserrat", sans-serif;
+}
+
+img{
+	height: 250px;
+	width: 250px;
+}
+
+#landing{
+	/*vh - viewport height - measured percentage of the height 
+	of the device u are viewwing ur webpage in*/
+	height:  80vh;
+	/*flexbox - display:  flex - will allow us to arrange or layout the elements inside our 
+	landing section vertically and hor*/
+/*by default, display: flex arranges elements inside the parent element in a row*/
+	display: flex;
+
+	/*this changes the direction of the elements inside an element with
+	display: flex*/
+	/*arranges the flex items into column*/
+	flex-direction: column;
+	
+	/*arranges elements vertically if the flex items are in a row // 
+	it arranges elements horizontally if the flex items are in a column*/
+	/*arranges all flex items to be centered horizontally*/
+	align-items: center;
+
+	/*justify-content - arranges elements horizontally if the flex items are in a row*/
+	/*it arranges elements horizontally if flex items are in column*/
+
+	justify-content: center;
+
+}
+
+#gallery{
+	height:  55vh;
+	display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tools {
+	/*line around element*/
+	border:  5px solid #f2f2f2;
+	/*space outside element*/
+	margin: 20px;
+	/*space inside element*/
+	padding: 25px;
+	height: 200px;
+	/*width based on the total width of the parent element*/
+	width: 75%;
+}
+
+html{
+	scroll-behavior: smooth;
+}
